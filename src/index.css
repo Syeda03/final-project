@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+#root > div,
+div[data-reactroot] {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #F8F8FF;
+}
+
+.product-listing {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.product-listing .product-list-item {
+  padding: 10px 30px;
+  width: 500px;
+  font-family: 'Laila', serif;
+}
+
+.imgSize{
+  width:400px;
+  height:400px;
+  object-fit:cover;
+}
+
+p {
+  font-family: 'Laila', serif;
+}
+
+h1 {
+  font-family: 'Meddon', cursive;
+  font-weight: bolder;
+  font-size: 50px;
+  color: #347235;
+}
+
+h3{
+  color:#e41b17;
+  font-weight: bolder;
+}
