@@ -1,5 +1,6 @@
 import React , {Component} from "react"
 import {Elements, StripeProvider} from "react-stripe-elements";
+import StripeCheckout from 'react-stripe-checkout';
 import Cart from "../features/cart"
 
 import CheckoutForm from "../components/checkout/Checkout";
@@ -9,6 +10,21 @@ class Checkout extends Component {
     constructor() {
         super();
         this.state = {stripe: null};
+    }
+
+    onToken = (token) => {
+        fetch('/api/payment/charge', {
+            method: 'POST',
+            body: JSON.stringify(token),
+        }).then(response => {
+            response.json().then(data => {
+                alert(`We are in business, ${data.email}`);
+            });
+        }).catch(err => {
+            console.log("Error " + err);
+        })
+
+        ;
     }
     componentDidMount() {
         if (window.Stripe) {
@@ -21,6 +37,7 @@ class Checkout extends Component {
         }
     }
     render() {
+        console.log(<Cart/>);
         return (
             <div className="tableStyle">
 
@@ -29,15 +46,10 @@ class Checkout extends Component {
                 <br />
                 <br />
                 <Cart />
-                <StripeProvider stripe={this.state.stripe}>
-                    <div className="example">
-                        <h2>Payment</h2>
-
-                        <Elements>
-                            <CheckoutForm />
-                        </Elements>
-                    </div>
-                </StripeProvider>
+                <StripeCheckout
+                    token={this.onToken}
+                    stripeKey="pk_test_YYmTL5Vf3nhVg9Xp5jc6GU3M" billingAddress={true} shippingAddress={true}
+                />
 
             </div>
         );

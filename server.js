@@ -18,13 +18,17 @@ app.use(require("body-parser").text());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 //DB Config
-const db = require("./config/keys").mongoURI;
+//const db = require("./config/keys").mongoURI;
 
-//connectto MongoDB
-mongoose
-    .connect(db)
-    .then(()=> console.log("Mongodb Connected"))
-    .catch(err=> console.log(err));
+var MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/nytreact';
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+
+// //connectto MongoDB
+// mongoose
+//     .connect(db)
+//     .then(()=> console.log("Mongodb Connected"))
+//     .catch(err=> console.log(err));
 
 //passport middleware
 app.use (passport.initialize());
