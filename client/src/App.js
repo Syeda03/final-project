@@ -8,17 +8,16 @@ import {setCurrentUser} from "./actions/authactions"
 import store from "./store";
 import Navbar from "./components/Layout/Navbar/Navbar";
 import Footer from "./components/Layout/Footer/Footer";
- import Landing from "./components/Layout/Landing/Landing";
 import Login from "././components/auth/Login/Login";
 // import Services from "././components/services/Services";
 // import Checkout from "././components/checkout/Checkout";
 import Register from "././components/auth/Register/Register";
-import Services from "./pages/Services";
-import About from "./pages/About";
-import InjectedCheckoutForm from "./components/checkout/Checkout";
+import Services from "./components/services/Services";
+import About from "./components/About";
+import CheckoutForm from "./components/checkout/CheckoutForm";
 
 
-import Checkout from "./pages/Checkout";
+import Checkout from "./components/checkout/Checkout";
 
 
 import './App.css';
@@ -51,12 +50,11 @@ class App extends Component {
     }
   render() {
     return (
-      // <Provider store = { store } >
+      
         <Router>
           <div className="App">
             <Navbar />
              <Route exact path="/" component={About} />
-            <Route exact path="/" component={Landing} />
             <Route exact path="/services" component={Services} />
             <div className="Container">
               <Route exact path="/register" component={Register} />
@@ -67,7 +65,7 @@ class App extends Component {
             <Footer/>
             </div>
         </Router>
-      // </Provider>
+     
     );
   }
 }

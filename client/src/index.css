@@ -14,16 +14,6 @@ div[data-reactroot] {
   background-color: #F8F8FF;
 }
 
-.tableStyle {
-  margin: auto;
-  width: 50%;
-}
-
-.img-thumbnail {
-  width:200px;
-  height:200px;
-  object-fit:cover;
-}
 .product-listing {
   display: flex;
   flex: 1;
@@ -34,7 +24,7 @@ div[data-reactroot] {
 .product-listing .product-list-item {
   padding: 10px 30px;
   width: 500px;
-
+  
 }
 
 .imgSize{
@@ -43,8 +33,9 @@ div[data-reactroot] {
   object-fit:cover;
 }
 
-
-
+.buton{
+  margin-left: 500px;
+}
 h1 {
   
   font-weight: bolder;
@@ -55,4 +46,56 @@ h1 {
 h3{
   color:#e41b17;
   font-weight: bolder;
+}
+.tableStyle {
+  margin: auto;
+  width: 50%;
+}
+
+.img-thumbnail {
+  width:200px;
+  height:200px;
+  object-fit:cover;
+}
+Countdown{
+  margin: 60px auto;
+  padding-bottom: 20px;
+  color: red;
+  background-position: center;
+}
+
+/* .Countdown-col{
+  display: inline-block;
+}
+
+.Countdown-col-element{
+  display: inline-block;
+  margin: 0 20px;
+  /* display: flex;
+  flex-direction: column; */
+
+
+.Countdown-col-element1{
+  font-size: 60px;
+  color: red;
+  text-align: center;
+  
+}
+.Countdown-col-element2{
+  font-size: 60px;
+  color: red;
+  text-align: center;
+  
+}
+.Countdown-col-element3{
+  font-size: 60px;
+  color:red;
+  text-align: center;
+  
+}
+.Countdown-col-element4{
+  font-size: 60px;
+  color: red;
+  text-align: center;
+  
 }

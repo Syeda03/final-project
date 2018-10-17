@@ -1,33 +1,47 @@
-import React, {Component} from 'react';
-import {CardElement, injectStripe} from 'react-stripe-elements';
+import React , {Component} from "react"
+import {Elements, StripeProvider} from "react-stripe-elements";
+import Cart from "../../features/cart"
 
-class CheckoutForm extends Component {
-    constructor(props) {
-        super(props);
-        this.submit = this.submit.bind(this);
-        this.state = {complete: false};
-    }
-    async submit(ev) {
-        let {token} = await this.props.stripe.createToken({name: "Name"});
-        let response = await fetch("/api/payment/charge", {
-            method: "POST",
-            headers: {"Content-Type": "text/plain"},
-            body: token.id
-        });
-        if (response.ok) this.setState({complete: true});
-        if (response.ok) console.log("Purchase Complete!")
-    }
+import CheckoutForm from "./CheckoutForm";
 
+
+class Checkout extends Component {
+    constructor() {
+        super();
+        this.state = {stripe: null};
+    }
+    componentDidMount() {
+        if (window.Stripe) {
+            this.setState({stripe: window.Stripe('pk_test_YYmTL5Vf3nhVg9Xp5jc6GU3M')});
+        } else {
+            document.querySelector('#stripe-js').addEventListener('load', () => {
+                // Create Stripe instance once Stripe.js loads
+                this.setState({stripe: window.Stripe('pk_test_YYmTL5Vf3nhVg9Xp5jc6GU3M')});
+            });
+        }
+    }
     render() {
-        if (this.state.complete) return <h1>Purchase Complete</h1>;
         return (
-            <div className="checkout">
-                <p>Would you like to complete the purchase?</p>
-                <CardElement />
-                <button onClick={this.submit}>Send</button>
+            <div className="tableStyle">
+
+                <br />
+                <h1>Check Out</h1>
+                <br />
+                <br />
+                <Cart />
+                <StripeProvider stripe={this.state.stripe}>
+                    <div className="example">
+                        <h2>Payment</h2>
+
+                        <Elements>
+                            <CheckoutForm />
+                        </Elements>
+                    </div>
+                </StripeProvider>
+
             </div>
         );
     }
 }
 
-export default injectStripe(CheckoutForm);
+export default Checkout;
