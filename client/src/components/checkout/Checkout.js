@@ -21,6 +21,8 @@ class Checkout extends Component {
         }).then(response => {
             response.json().then(data => {
                 alert(`We are in business, ${data.email}`);
+            }).catch(err => {
+                console.log("Error " + err);
             });
 
         }).catch(err => {
