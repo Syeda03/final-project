@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {CardElement, injectStripe} from 'react-stripe-elements';
-import {CardNumberElement} from "react-stripe-elements"
-import {CardExpiryElement} from "react-stripe-elements"
-import {PostalCodeElement} from "react-stripe-elements"
+// import {CardNumberElement} from "react-stripe-elements"
+// import {CardExpiryElement} from "react-stripe-elements"
+// import {PostalCodeElement} from "react-stripe-elements"
 
 import {Link} from "react-router-dom";
 

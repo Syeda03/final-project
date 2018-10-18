@@ -3,15 +3,7 @@ import React from "react";
 const divStyle = {
   margin: 80,
 };
-const pStyle = {
   
-
- fontWeight: 50,
-};
-const h5Style = {
-  
-  textAlign: 'center'
-};
 const h1Style = {
   
   textAlign: 'center'
@@ -20,6 +12,7 @@ const h1Style = {
 
 
 const Complete = () => (
+  
   <div style={divStyle}>                                                   
     <div class="modal" tabindex="-1" role="dialog"></div>
       <div class="modal-dialog" role="document">

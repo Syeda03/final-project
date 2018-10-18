@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route } from "react-router-dom";
-import {Elements, StripeProvider} from "react-stripe-elements";
+// import {Elements, StripeProvider} from "react-stripe-elements";
 
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
@@ -12,7 +12,7 @@ import Login from "././components/auth/Login/Login";
 import Register from "././components/auth/Register/Register";
 import Services from "./components/services/Services";
 import About from "./components/About";
-import CheckoutForm from "./components/checkout/CheckoutForm";
+// import CheckoutForm from "./components/checkout/CheckoutForm";
 // import Dropoff from "./components/Dropoff"
 
 
