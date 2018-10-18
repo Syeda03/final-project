@@ -37,7 +37,9 @@ app.use("/api/cart",cart);
 app.use("/api/payment",payment);
 
 app.use("/api/payment",payment);
-
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+}
 
 
 const port = process.env.PORT || 5000;
