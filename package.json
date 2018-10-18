@@ -5,10 +5,10 @@
   "main": "server.js",
   "scripts": {
     "client-install": "npm install -- prefix client",
-    "start": "node server.js",
+    "start": "npm run dev",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "heroku-postbuild": "cd client && npm install && npm run build && cd .. && npm run dev",
+//    "heroku-postbuild": "cd client && npm install && npm run build && cd .. && npm run dev",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",
