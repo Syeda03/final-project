@@ -38,8 +38,11 @@ app.use("/api/payment",payment);
 
 app.use("/api/payment",payment);
 
-    app.use(express.static("client/build"));
-
+app.use(express.static(path.join(__dirname, 'client/build')));
+// Anything that doesn't match the above, send back index.html
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/client/build/index.html'))
+})
 
 const port = process.env.PORT || 5000;
 
