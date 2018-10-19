@@ -19,13 +19,19 @@ function loadFromLocalStorage() {
 }
 
 const persistedState = loadFromLocalStorage()
+const devtoolEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__&& window.__REDUX_DEVTOOLS_EXTENSION__();
+const composeEnhancer = 
+typeof window === 'object' &&
+  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+    devtoolEnhancers
+    }) : compose;
 
 const store = createStore(
   rootReducer,
   persistedState, 
-  compose(
-    applyMiddleware(...middleware),
-    window.__REDUX_DEVTOOLS_EXTENSION__&& window.__REDUX_DEVTOOLS_EXTENSION__()
+  composeEnhancer(
+    applyMiddleware(...middleware)
   )
 );
 
