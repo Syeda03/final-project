@@ -5,6 +5,8 @@ import rootReducer from "./reducers";
 
 const initialState = {};
 
+const middleware = [thunk];
+
 function loadFromLocalStorage() {
   try {
     const serializedState = localStorage.getItem('state')
@@ -17,18 +19,13 @@ function loadFromLocalStorage() {
 }
 
 const persistedState = loadFromLocalStorage()
-// const devtoolEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__&& window.__REDUX_DEVTOOLS_EXTENSION__();
-const composeEnhancer = compose;
-// typeof window === 'object' &&
-//   window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
-//     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-//     devtoolEnhancers
-//     }) : compose;
-const middleware = [thunk, persistedState];
+
 const store = createStore(
-  rootReducer, 
-  composeEnhancer(
-    applyMiddleware(...middleware)
+  rootReducer,
+  persistedState, 
+  compose(
+    applyMiddleware(...middleware),
+    window.__REDUX_DEVTOOLS_EXTENSION__&& window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 );
 
