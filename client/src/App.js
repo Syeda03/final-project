@@ -12,7 +12,7 @@ import Login from "././components/auth/Login/Login";
 import Register from "././components/auth/Register/Register";
 import Services from "./components/services/Services";
 import About from "./components/About";
-import CheckoutForm from "./components/checkout/CheckoutForm";
+// import CheckoutForm from "./components/checkout/CheckoutForm";
 // import Dropoff from "./components/Dropoff"
 
 

@@ -1,10 +1,7 @@
 import React , {Component} from "react"
-import {Elements, StripeProvider} from "react-stripe-elements";
 import StripeCheckout from 'react-stripe-checkout';
 import Cart from "../../features/cart"
 import {Link} from "react-router-dom";
-
-import CheckoutForm from "./CheckoutForm";
 
 
 

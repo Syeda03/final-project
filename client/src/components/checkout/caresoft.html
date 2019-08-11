@@ -1,0 +1,1436 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+	/login/index.cfm 
+</title>
+
+
+
+<script type="text/javascript" src="dropdowntabfiles/dropdowntabs.js"></script>
+<link rel="stylesheet" type="text/css" href="dropdowntabfiles/bluetabs.css" />
+<link href="css/tooltip.css" type="text/css" rel="stylesheet"/>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+<link href="../styles.css" rel="stylesheet" type="text/css" />
+
+
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+
+
+
+<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=13o4mg0znqj5cssuhqyd7hi8grjgjagfc9zf85mlfju49vnr"></script>
+
+
+
+  <script>
+    tinymce.init({
+      mode : "specific_textareas",
+      editor_selector : "mceEditor",
+      plugins: "lists"
+    });
+  </script>
+
+
+	
+	<script type='text/javascript'>
+		var customData = {
+		   'name' : 'Syeda Zehra',
+		   'email' : 'lincolnmann@gmail.com',
+		   'Agency Name' : 'Test - Please Ignore',
+		   'Agency ID' : '23',
+		   'Phone' : '8052053822',
+		   'User Name' : 'syedacc',
+		   'Access Level' :'Manager'
+		}
+
+		window._loq = window._loq || []    
+		  window._loq.push(['custom', customData])
+
+		window.__lo_site_id = 97022;
+			(function() {
+				var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true;
+				wa.src = 'https://d10lpsik1i8c69.cloudfront.net/w.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);
+		})();
+	</script>
+
+<meta name="google-translate-customization" content="6d502633648f08ef-fca3dd6808770476-g6dab7bd1eab98c17-b"></meta>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+	<link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+
+
+	<style type="text/css">
+	.commenthidden {
+		display:none
+	}
+	.commentshown {
+		display:inline
+	}
+	</style>
+
+	<script type="text/Javascript">
+		function togglecomments (postid) {
+		var whichpost = document.getElementById(postid);
+		if (whichpost.className=="commentshown") { whichpost.className="commenthidden"; } else { whichpost.className="commentshown"; }
+		}
+	</script>
+
+	
+
+	</head>
+	
+		<body>
+	
+		<div id="page-wrap">
+			<header class="clearfix">
+				<div class="logo">
+					<img src="../img/logo_bright.png">
+				</div>
+				<div class="menu ">
+					
+
+<a id="nav-toggle" ><span></span></a>
+<div id="bluemenu" class="bluetabs">
+	<ul>
+		
+			<li><a href="index.cfm">Home</a></li>
+		
+		<li><a href="index.cfm?reports=1" rel="dropmenu2_b">Reports</a></li>
+		<li><a href="index.cfm?formid=10&action=edit&edit=1&myaccount=1">My Account</a></li>
+
+		   
+			<li><a href="index.cfm?action=agency">Edit Agency</a></li>
+		
+		<li><a href="index.cfm" rel="dropmenu3_b">Calendar</a></li>
+		<li><a href="logout.cfm">Logout</a></li>
+		<li><a style="background-image:none;background-color:#8bc34a;color:#fff" href="index.cfm?formid=2&action=add&dbtype=all&contactus=1">Contact Us</a></li>
+		
+		<li><a style="background-image:none !important;background-color:#FF6A08;color:#fff" href="https://caresoft.us/recent-changes/">New Features</a></li>
+	</ul>
+</div>
+
+
+<form name="frm1" id="frm1" method="post" action="https://caresoft.us/login/scal/dashboard.php">
+		<input type='hidden' name='token' value='ra3305823.43394'/>
+		<input type='hidden' name='username' value='testuser'/>
+		<input type='hidden' name='password' value='mi$tyFruit38'/>
+		<input type='hidden' name='clabel' value='Individual'/>
+	<div id="dropmenu3_b" class="dropmenudiv_b">
+		
+			<a href="javascript:void(0);" onclick="$(this).closest('form').submit();">Staff Calendar</a>
+		
+</form>
+
+<form name="frm1" id="frm1" method="post" action="https://caresoft.us/login/scal/dashboard.php?cl=1">
+	<input type='hidden' name='token' value='ra3305823.43394'/>
+	<input type='hidden' name='username' value='testuser'/>
+	<input type='hidden' name='password' value='mi$tyFruit38'/>
+	<input type='hidden' name='clabel' value='Individual'/>
+	<a href="javascript:void(0);" onclick="$(this).closest('form').submit();">Individual Calendar</a>
+</form>
+
+</div>
+
+
+
+
+
+<div id="dropmenu2_b" class="dropmenudiv_b">
+	<a href="index.cfm?reports=2">Staff Data Entry</a>
+	<a href="index.cfm?reports=1&show=all">Individual Performance</a>
+	<a href="index.cfm?reports=1&show=medications">Medications</a>
+	<a href="index.cfm?action=view&id=0&formid=15&pillcount=1">Pill Count</a>
+	
+		<a href="index.cfm?action=view&id=0&formid=15&referencesheet=1">Individual Reference Sheet <span style="color:#FF6E0F">New</span></a>
+	
+	<a href="index.cfm?action=view&id=0&visit=1&formid=25&doctorreport=1">Doctors/Providers</a>
+	
+		<a href="index.cfm?action=profile">ISP/IPP</a>
+	
+
+	<a href="index.cfm?reports=1&show=mar_report">Medication Administration Report (M.A.R.)</a>
+
+	
+		<a href="index.cfm?reports=1&show=service_log">Service Log/Billing Report</a>
+	
+		<a href="index.cfm?reports=1&show=expense_ledger">Daily Expense Ledger</a>
+	
+	
+	<a href="index.cfm?reports=1&show=weeklycarereport">Weekly Care Report</a>
+
+	
+		<a href="index.cfm?formid=31&action=view">Login Activity Report</a>
+	
+</div>
+
+
+<script type="text/javascript">
+//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+tabdropdown.init("bluemenu")
+$('#nav-toggle').click(function(){
+	$(this).toggleClass('active');
+	$(this).parents('.menu').toggleClass('active');
+});
+</script>
+
+<br>
+
+
+				</div>
+			</header>
+
+	
+			<div class="userinfo clearfix">
+				<div class="left">Admin: Syeda Zehra</div>
+			
+			</div>
+		<!-- Tour created with Amberjack wizard: http://amberjack.org -->
+<div class="ajTourDef" id="MyTour" style="display:none"
+ title="https://caresoft.us/login/logout.cfm?tour=1">
+  <div title="index.cfm">
+    Welcome to the CareSoft Live Product Tour! Please click the arrow above to proceed. Click the X to cancel the tour at anytime.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?producttour=1">
+    List of key forms necessary to track your individuals progress listed in an easy-to-read display. The list of forms is completely customizable for staff and managers and will only show the forms that you want displayed.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=10&action=view">
+    As a Manager you can see all of your staff listed giving you the control to make changes.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=10&action=add">
+    As your business grows you can increase your staff support by adding new members.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=15&action=add">
+    Input medications of your individuals and the times they are to be given.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=view&id=0&formid=15&clientid=4">
+    View medications, their purpose, dosage, and side effects all at once.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=add&id=0&formid=14&clientid=56&interval_text=Morning">
+    We have an easy-to-use Medication Administration Record (MAR) to log when medications are given and to whom.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=add&id=0&formid=7&clientid=56">
+   The heart of our software is the Progress Notes page where behavior tracking, goals, and the individuals' daily activities are entered.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=6&action=add">
+    Protect your program from liability by documenting any injuries you notice when you pick up your individuals from placement.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=9&action=add">
+    Capture the crucial details of an incident with our easy questionnaire form.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=add&id=0&formid=16&clientid=4">
+    Choose your individuals' behaviors and enter their related goals in order to track their progress.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=add&id=0&formid=12&clientid=4">
+    Input and share what interventions worked in order to quickly deescalate crisis situations.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?clientid=4&action=profile&fromdate=08%2F01%2F2012&todate=11%2F25%2F2012">
+    View an individuals "snap shot" profile and all of the Treatment Plans previously generated.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=isp&clientid=4&fromdate=10/01/2012&todate=10/31/2012">
+    Generate and view individuals' ISP's and behaviors complete with charts, graphs, medications, and other progress information.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?reports=2">
+    Allows Managers to monitor their staffs' day to day responsibilities in order maintain accurate reporting.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?reports=1&show=all&client=4&tourid=1">
+   Get a quick overview of your individuals' performance and progress instantly from any date range.
+  </div>
+  <div title="https://caresoft.us/login/logout.cfm?tour=1">
+   Get started now and do more with less! Click the X to complete the tour.
+  </div>
+  <div title="https://caresoft.us/login/logout.cfm?tour=1"></div>
+</div>
+
+
+  <script type="text/javascript" src="../amberjack.js"></script>
+
+
+
+<script type="text/javascript" defer>
+  Amberjack.open();
+</script> 
+<link href="css/buttons.css" rel="stylesheet" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="../fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="../fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+	</style>
+<!-- Add Media helper (this is optional) -->
+<script type="text/javascript" src="../fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('.fancybox').fancybox();
+
+		/*
+		 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+		*/
+		$('.fancybox-media')
+			.attr('rel', 'media-gallery')
+			.fancybox({
+				openEffect : 'none',
+				closeEffect : 'none',
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				arrows : false,
+				helpers : {
+					media : {},
+					buttons : {}
+				}
+			});
+	});
+</script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link href="js/jotform3.1.92.css" type="text/css" rel="stylesheet"/>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/timepicker@1.11.14/jquery.timepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/timepicker@1.11.14/jquery.timepicker.min.css" />
+
+
+
+
+<style>
+label {
+    font-weight: normal !important;
+}
+</style>
+
+
+
+	<style type="text/css">
+		.form-label{
+			width:150px !important;
+		}
+		.form-label-left{
+			width:150px !important;
+		}
+		.form-line{
+			padding:10px;
+		}
+		.form-all{
+			color:Black !important;
+			font-family:"Source Sans Pro",Arial;
+			font-size:medium;
+		}
+	</style>
+	
+<style type="text/css">
+label {
+	width: 8em;
+	float: left;
+}
+</style>
+	<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<link href="../login/css/demos.css" rel="stylesheet" type="text/css"/>
+
+<style>
+	textarea {
+		width:98%;
+		border:2px solid #ccc;
+		padding: 1%;
+		vertical-align: top;
+	}
+	.animated {
+		-webkit-transition: height 0.2s;
+		-moz-transition: height 0.2s;
+		transition: height 0.2s;
+	}
+</style>
+
+<script language="javascript">
+	function confirmDelete(aURL) {
+		if(confirm('This action will permanently delete this record.\n\nPress OK to continue.')) {
+			location.href = aURL;
+		}
+	}
+</script>
+
+<script language="javascript">
+	function confirmArchive(aURL) {
+		if(confirm('This action will Deactivate this record. You may have to contact support to retrieve this  information.\n\nPress OK to continue.')) {
+			location.href = aURL;
+		}
+	}
+</script>
+
+<script>
+    jQuery(function($){ //on document.ready
+        $('#dateofactivity').datepicker();
+    })
+    jQuery(function($){ //on document.ready
+        $('#dateofactivity1').datepicker();
+    })
+    jQuery(function($){ //on document.ready
+        $('#dateofactivity2').datepicker();
+    })
+    jQuery(function($){ //on document.ready
+        $('#dateofactivity3').datepicker();
+    })
+    jQuery(function($){ //on document.ready
+        $('#dob_date').datepicker();
+    })
+    jQuery(function($){ //on document.ready
+        $('#dateofabsencefrom_date').datepicker();
+    })
+    jQuery(function($){ //on document.ready
+        $('#dateofabsenceto_date').datepicker();
+    })
+    jQuery(function($){ //on document.ready
+        $('#shift_date').datepicker();
+    })
+</script>
+
+<script>
+	jQuery(function ($) { //on document.ready
+		$('.datepick').each(function () {
+			$(this).datepicker();
+		});
+	})
+</script>
+
+<script language="JavaScript">
+function toggle(source) {
+  checkboxes = document.getElementsByName('medicationid_number');
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+	.alert
+	{
+	    font-size: .7em;
+	    padding: 1em;
+	    text-align: left;
+	   	white-space: nowrap;
+	    width: auto;
+	    word-wrap: normal;
+	}
+	.ui-dialog .ui-dialog-titlebar-close span {
+		display: block;
+		margin: -8px;
+		}
+</style>
+
+
+<script src='../login/js/autosize/jquery.autosize.js'></script>
+
+<script>
+	//autosize text areas
+	$(function(){
+		$('.normal').autosize();
+		$('.animated').autosize();
+	});
+</script>
+
+<script>
+	window.alert = function(message){
+	    $(document.createElement('div'))
+	        .attr({title: 'Alert', 'class': 'alert'})
+	        .html(message)
+	        .dialog({
+	            buttons: {OK: function(){$(this).dialog('close');}},
+	            close: function(){$(this).remove();},
+	            draggable: true,
+	            modal: true,
+	            resizable: false,
+	            width: 'auto'
+	        });
+	};
+
+
+	function checkFields() {
+	var missinginfo = "";
+	var missingnumbers = "";
+	var missinginterval = "";
+	
+		if(document.entryform.clientid_number_change.value == "") {
+		missinginfo += "<br> - Individual";
+		}
+		
+			if (document.entryform.dateofactivity_date.value == "") {
+			missinginfo += "<br> - Date";
+			}
+		
+
+		/* Validate all numbers if field ends with _number, this matches the field name,
+		but I will use the id instead and comment this out */
+
+		var inputs = document.entryform.getElementsByTagName("input");
+		for (var i = 0; i < inputs.length; i++) {
+			if(inputs[i].name.indexOf("_number") > 0){
+				var mynumbers = inputs[i].name;
+				var mynumberslabel = mynumbers.replace("_number","");
+				var myvalues = document.getElementsByName(mynumbers)[0].value;
+
+				//this will check to make sure it is a number but will still allow blanks
+				if(!isFinite(myvalues)){
+					//alert(myvalues);
+					missingnumbers += "<br> " + mynumberslabel;
+				}
+			}
+		}
+
+		var elems = document.getElementsByTagName("*");
+		for (var i=0; i<elems.length; i++) {
+			if (elems[i].id.indexOf("Number-") == 0){
+				var myidname = elems[i].id;
+				var myidelement = document.getElementById(myidname);
+				var myvalue = myidelement.value;
+				var mylabel = myidname.replace("Number-","");
+
+				//this will check to make sure it is a number but will still allow blanks
+				if(!isFinite(myvalue)){
+					//alert(myvalues);
+					missingnumbers += "<br> " + " - " + mylabel;
+				}
+
+			}
+		}
+
+
+		if (missingnumbers != ""){
+			missingnumbers ="<br><br>" +
+			"The following fields only accepts numbers:<br>" + missingnumbers;
+		}
+
+		// Check each form and validate accordingly
+		
+
+	if (missinginfo != "") {
+		missinginfo ="<br>" +
+		"You failed to correctly fill in the fields below:<br>" +
+		missinginfo ;
+	}
+
+	missinginfo = missinginfo.concat(missingnumbers);
+
+	if (missinginfo != "") {
+		alert(missinginfo + "" +
+		"<br><br> Please re-enter and submit again!");return false;
+	}
+	else return true;
+	}
+</script>
+
+<script type="text/javascript">
+	function showDiv(divid){
+		var div = document.getElementById(divid);
+		div.style.display = 'block';
+	}
+	function hideDiv(divid){
+		var div = document.getElementById(divid);
+		div.style.display = 'none';
+	}
+	function toggleTr(box,id) {
+		var elm = document.getElementById(id)
+		elm.style.display = box.checked? "inline":"none"
+	}
+</script>
+
+<script type="text/javascript">
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+</script>
+
+
+
+<style>
+label {
+    font-weight: normal !important;
+}
+</style>
+
+
+	<table id="box-table-a" width="750" align="center">
+
+	<caption style="background-color:#ffff00;text-align:left;font-size:large" class="warning">There are 4 medication(s) <a href="index.cfm?medicationreminders=1">Overdue today</a></caption>
+
+
+<tr>
+	<th
+		
+		> Form Name
+	</th>
+	<th
+		style="text-align:center;width:100px;"
+		
+		> Action
+	</th>
+	
+		<th>
+			Description
+		</th>
+	
+</tr>
+
+
+		<tr>
+			<td>
+				
+					<a class="tablelinks" href="index.cfm?formid=10&action=add">Staff</a>
+				
+			</td>
+			<td class="addviewIcon">
+				
+					<a href="index.cfm?formid=10&action=add"><div class="add_icon" title="Add"></div></a>
+
+					<a href="index.cfm?formid=10&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Add New Staff 
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				
+					<a class="tablelinks" href="index.cfm?formid=11&action=add">Individual</a>
+				
+			</td>
+			<td class="addviewIcon">
+				
+					<a href="index.cfm?formid=11&action=add"><div class="add_icon" title="Add"></div></a>
+
+					<a href="index.cfm?formid=11&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				
+					Add New Individual 
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?action=activitiesList">Activities</a>  
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?action=activitiesList">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?action=activitiesList"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Add and View Activities of Your Agency
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=23&action=add">
+							Activity Log 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=23&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=23&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Stores Activities
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=17&action=add">
+							Behaviors 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=17&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=17&action=add"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Stores Behaviors and Behavior Descriptions
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=6&action=add">
+							Body Assessment 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=6&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=6&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Document Noticeable Injuries & Upload Photos of Injuries
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=37&action=add">
+							Bowel Movement 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=37&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=37&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Track Bowel Movements
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=18&action=add">
+							Individual Files
+							
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=18&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=18&action=add"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Upload and Store Unique and Important Files
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?action=customprogressnotes">Custom Progress Note Templates</a> 
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?action=customprogressnotes">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?action=customprogressnotes"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Create Custom Progress Note Types. (Counseling Session, Doctor Visit etc.)
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=34&action=add">
+							Daily Expense Ledger 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=34&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=34&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Tracks Deposits and Expenses
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=25&action=add">
+							Doctors/Providers 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=25&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=25&action=view&visit=1"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Add and View Providers
+			</td>
+		</tr>
+		
+			<tr>
+				<td>
+					<a class="tablelinks" href="index.cfm?formid=7&action=add&docvisit=1">Doctor/Provider Visits</a>
+				</td>
+				<td class="addviewIcon">
+					
+						<a href="index.cfm?formid=7&action=add&docvisit=1"><div class="add_icon" title="Add"></div></a>
+					
+					<a href="index.cfm?formid=7&action=view&docvisit=1"><div class="view_icon" title="View, Edit, Medications"></div></a>
+				</td>
+				
+					<td>
+						Add or View Doctor/Provider Visits 
+					</td>
+				
+			</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=16&action=add">
+							Goals 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=16&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=16&action=add"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Add and View Goals of Your Individuals
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=12&action=add">
+							Helpful Interventions 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=12&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=12&action=add"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Stores Interventions
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=26&action=add">
+							Important Dates 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=26&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=26&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Enter Important Dates
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=9&action=add">
+							Incident Report 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=9&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=9&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Stores Consumer Incidents
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?reports=1&show=mar_report&type=worksheet">MAR Worksheet</a> 
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?reports=1&show=mar_report&type=worksheet">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?reports=1&show=mar_report&type=worksheet"><div class="view_icon" title="Quickly document daily M.A.R."></div></a>
+				
+			</td>
+			<td>
+				View your MAR, make corrections & updates
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=14&action=add">
+							Medication Log 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=14&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=14&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Stores Daily medication log
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=15&action=add">
+							Medications 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=15&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=15&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Stores Medications
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=20&action=add">
+							Personal and Incidentals 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=20&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=20&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Enter Individuals' Funds and Daily Budget
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=21&action=add">
+							Personal and Incidentals Log 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=21&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=21&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Keep Track of Money Being Distributed & the Balances
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=7&action=add">
+							Progress Notes/Activity/Billing Log 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=7&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=7&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Enter Daily Progress Notes, Number of Behaviors, Billing, and Goals Met
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=36&action=add">
+							Progress Review 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=36&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=36&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Track Progress Of Each Goal Outcome
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=22&action=add">
+							Quality of Living Tasks 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=22&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=22&action=add"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Tracks Quality of Living Tasks
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=24&action=add">
+							Shift Summary 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=24&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=24&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Use if you do not wish to track behaviors & goals but want to give an overall description of the days events
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=33&action=add">
+							Staff Absence Request 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=33&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=33&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Staff Absence Request Form
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=27&action=add">
+							Student Intake 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=27&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=27&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Intake Form 
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				
+						<a class="tablelinks" href="index.cfm?formid=19&action=add">
+							Vital Signs and Weight 
+						</a>
+					
+			</td>
+			<td class="addviewIcon">
+				
+							<a href="index.cfm?formid=19&action=add">
+						
+							<div class="add_icon" title="Add"></div>
+						</a>
+					
+				
+					<a href="index.cfm?formid=19&action=view"><div class="view_icon" title="View, Edit"></div></a>
+				
+			</td>
+			<td>
+				Enter & Monitor Vital Signs & Weights
+			</td>
+		</tr>
+		
+</table>
+
+
+
+	
+
+
+
+<!-- Tour created with Amberjack wizard: http://amberjack.org -->
+<div class="ajTourDef" id="MyTour" style="display:none"
+ title="https://caresoft.us/login/logout.cfm?tour=1">
+  <div title="index.cfm">
+    Welcome to the CareSoft Live Product Tour! Please click the arrow above to proceed. Click the X to cancel the tour at anytime.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?producttour=1">
+    List of key forms necessary to track your individuals progress listed in an easy-to-read display. The list of forms is completely customizable for staff and managers and will only show the forms that you want displayed.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=10&action=view">
+    As a Manager you can see all of your staff listed giving you the control to make changes.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=10&action=add">
+    As your business grows you can increase your staff support by adding new members.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=15&action=add">
+    Input medications of your individuals and the times they are to be given.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=view&id=0&formid=15&clientid=4">
+    View medications, their purpose, dosage, and side effects all at once.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=add&id=0&formid=14&clientid=56&interval_text=Morning">
+    We have an easy-to-use Medication Administration Record (MAR) to log when medications are given and to whom.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=add&id=0&formid=7&clientid=56">
+   The heart of our software is the Progress Notes page where behavior tracking, goals, and the individuals' daily activities are entered.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=6&action=add">
+    Protect your program from liability by documenting any injuries you notice when you pick up your individuals from placement.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=9&action=add">
+    Capture the crucial details of an incident with our easy questionnaire form.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=add&id=0&formid=16&clientid=4">
+    Choose your individuals' behaviors and enter their related goals in order to track their progress.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=add&id=0&formid=12&clientid=4">
+    Input and share what interventions worked in order to quickly deescalate crisis situations.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?clientid=4&action=profile&fromdate=08%2F01%2F2012&todate=11%2F25%2F2012">
+    View an individuals "snap shot" profile and all of the Treatment Plans previously generated.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=isp&clientid=4&fromdate=10/01/2012&todate=10/31/2012">
+    Generate and view individuals' ISP's and behaviors complete with charts, graphs, medications, and other progress information.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?reports=2">
+    Allows Managers to monitor their staffs' day to day responsibilities in order maintain accurate reporting.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?reports=1&show=all&client=4&tourid=1">
+   Get a quick overview of your individuals' performance and progress instantly from any date range.
+  </div>
+  <div title="https://caresoft.us/login/logout.cfm?tour=1">
+   Get started now and do more with less! Click the X to complete the tour.
+  </div>
+  <div title="https://caresoft.us/login/logout.cfm?tour=1"></div>
+</div>
+
+
+  <script type="text/javascript" src="../amberjack.js"></script>
+
+
+
+<script type="text/javascript" defer>
+  Amberjack.open();
+</script> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37299344-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
+<!-- Tour created with Amberjack wizard: http://amberjack.org -->
+<div class="ajTourDef" id="MyTour" style="display:none"
+ title="https://caresoft.us/login/logout.cfm?tour=1">
+  <div title="index.cfm">
+    Welcome to the CareSoft Live Product Tour! Please click the arrow above to proceed. Click the X to cancel the tour at anytime.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?producttour=1">
+    List of key forms necessary to track your individuals progress listed in an easy-to-read display. The list of forms is completely customizable for staff and managers and will only show the forms that you want displayed.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=10&action=view">
+    As a Manager you can see all of your staff listed giving you the control to make changes.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=10&action=add">
+    As your business grows you can increase your staff support by adding new members.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=15&action=add">
+    Input medications of your individuals and the times they are to be given.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=view&id=0&formid=15&clientid=4">
+    View medications, their purpose, dosage, and side effects all at once.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=add&id=0&formid=14&clientid=56&interval_text=Morning">
+    We have an easy-to-use Medication Administration Record (MAR) to log when medications are given and to whom.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=add&id=0&formid=7&clientid=56">
+   The heart of our software is the Progress Notes page where behavior tracking, goals, and the individuals' daily activities are entered.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=6&action=add">
+    Protect your program from liability by documenting any injuries you notice when you pick up your individuals from placement.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?formid=9&action=add">
+    Capture the crucial details of an incident with our easy questionnaire form.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=add&id=0&formid=16&clientid=4">
+    Choose your individuals' behaviors and enter their related goals in order to track their progress.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=add&id=0&formid=12&clientid=4">
+    Input and share what interventions worked in order to quickly deescalate crisis situations.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?clientid=4&action=profile&fromdate=08%2F01%2F2012&todate=11%2F25%2F2012">
+    View an individuals "snap shot" profile and all of the Treatment Plans previously generated.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?action=isp&clientid=4&fromdate=10/01/2012&todate=10/31/2012">
+    Generate and view individuals' ISP's and behaviors complete with charts, graphs, medications, and other progress information.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?reports=2">
+    Allows Managers to monitor their staffs' day to day responsibilities in order maintain accurate reporting.
+  </div>
+  <div title="https://caresoft.us/login/index.cfm?reports=1&show=all&client=4&tourid=1">
+   Get a quick overview of your individuals' performance and progress instantly from any date range.
+  </div>
+  <div title="https://caresoft.us/login/logout.cfm?tour=1">
+   Get started now and do more with less! Click the X to complete the tour.
+  </div>
+  <div title="https://caresoft.us/login/logout.cfm?tour=1"></div>
+</div>
+
+
+  <script type="text/javascript" src="../amberjack.js"></script>
+
+
+
+<script type="text/javascript" defer>
+  Amberjack.open();
+</script>
+
+</div>
+<div style="max-width:none !important">
+
+</div>
+
+
+
+
+<link href="../css/print.css" rel="stylesheet" type="text/css" />
+
+
+<script type='text/javascript' src='js/touchHover.js'></script>
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+<script>
+	$(function() {
+		$('.time').timepicker();
+	});
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        $("body").on("click", ".datepick", function() {
+            $(this).datepicker().triggerHandler("focus");
+        });
+    });
+</script>
+
+</body>
+</html>
