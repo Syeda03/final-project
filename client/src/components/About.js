@@ -13,7 +13,9 @@ const About = () => (
   <div>
      
     <Hero backgroundImage="http://longwallpapers.com/Desktop-Wallpaper/holiday-wallpaper-hd-resolution-For-Desktop-Wallpaper.jpg">
-      <center><iframe width="360" height="480" src="https://w2.countingdownto.com/2280547" frameborder="0"></iframe></center>
+      <center><iframe width="351" height="468" src="https://w2.countingdownto.com/2675957" frameborder="0"></iframe>
+</center>
+      
      
         {/* <Countdown  date={`${(new Date().getMonth() === 11 && new Date().getDate() > 23) ? new Date().getFullYear() + 1 : new Date().getFullYear()}-12-24T00:00:00`} />
          <h3 className="title">until Christmas eve</h3>  */}
