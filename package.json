@@ -33,6 +33,6 @@
     "react-dom": "^16.9.0",
     "react-stripe-elements": "^2.0.3",
     "stripe": "^6.36.0",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   }
 }
